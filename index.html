@@ -1,182 +1,453 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html><!-- Last Published: Sun Dec 10 2023 13:26:09 GMT+0000 (Coordinated Universal Time) -->
+<html data-wf-domain="webflow-clone-template-light.webflow.io" data-wf-page="5e24f0a19b89b60b8d439c7a"
+    data-wf-site="5e24f0a19b89b6431b439c7b">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <!-- Enlace a los estilos CSS -->
-    <link rel="stylesheet" href="/src/assets/css/styles.css">
-    <!-- Enlace a Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="utf-8" />
+    <title>Free Webflow Cloneable Template (LIGHT)</title>
+    <meta
+        content="Free cloneable Webflow template by Flowbase. For more webflow cloneable templates, assets and guides - visit flowbase.co"
+        name="description" />
+    <meta content="Free Webflow Cloneable Template (LIGHT)" property="og:title" />
+    <meta
+        content="Free cloneable Webflow template by Flowbase. For more webflow cloneable templates, assets and guides - visit flowbase.co"
+        property="og:description" />
+    <meta content="https://cdn.prod.website-files.com/5e2d503812d9356ed3ed29c4/5e2e78e186f417b6182b4e31_open-graph.jpg"
+        property="og:image" />
+    <meta content="Free Webflow Cloneable Template (LIGHT)" property="twitter:title" />
+    <meta
+        content="Free cloneable Webflow template by Flowbase. For more webflow cloneable templates, assets and guides - visit flowbase.co"
+        property="twitter:description" />
+    <meta content="https://cdn.prod.website-files.com/5e2d503812d9356ed3ed29c4/5e2e78e186f417b6182b4e31_open-graph.jpg"
+        property="twitter:image" />
+    <meta property="og:type" content="website" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap"
-        rel="stylesheet">
-    <!-- Enlace a Font Awesome -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
-    <script src="/src/assets/js/jquery.min.js"></script>
+        href="/css/webflow-clone-template-light.121ee18f5.css"
+        rel="stylesheet" type="text/css" />
+    <script
+        type="text/javascript">!function (o, c) { var n = c.documentElement, t = " w-mod-"; n.className += t + "js", ("ontouchstart" in o || o.DocumentTouch && c instanceof DocumentTouch) && (n.className += t + "touch") }(window, document);</script>
+    <link href="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/61b80b8e8cc9ce71948ca5bb_favicon.png"
+        rel="shortcut icon" type="image/x-icon" />
+    <link href="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/61b80b907a7f58222b2383e2_Webclip.png"
+        rel="apple-touch-icon" />
 </head>
 
-<body class="font-montserrat flex flex-col min-h-screen bg-color1">
-    <!-- Encabezado -->
-    <header class="flex justify-between items-center p-2 bg-color5 relative h-15">
-        <div class="logo_header">
-            <a href="/index.html">
-                <img src="/src/assets/images/logo-blanco.svg" alt="Logo TicketPro+"
-                    class="w-16 p-2 transition-transform duration-600 hover:rotate-360">
-            </a>
-        </div>
-        <div class="titulo_header text-center flex-1">
-            <h1 class="text-4xl text-color1 font-montserrat font-bold">SGIA</h1>
-        </div>
-        <div class="menu-container flex flex-col items-center cursor-pointer p-2 z-50">
-            <div class="menu-icon flex flex-col justify-between w-7 h-5" id="menu-icon">
-                <span class="bg-color1 h-1 rounded transition-transform duration-300"></span>
-                <span class="bg-color1 h-1 rounded transition-transform duration-300"></span>
-                <span class="bg-color1 h-1 rounded transition-transform duration-300"></span>
+<body>
+    <div class="global-component-banner w-embed w-iframe"><iframe src="https://flowbase.co/global/banner" width="100%"
+            height="50px" scrolling="no" frameborder="0"></iframe></div>
+    <div class="header">
+        <div data-collapse="medium" data-animation="default" data-duration="400" data-easing="ease" data-easing2="ease"
+            role="banner" class="nav-bar w-nav">
+            <div class="nav-container w-container"><a href="#" class="w-nav-brand"><img
+                        src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/6575bc476f4f102f93a5a51c_FB%20Logo.svg"
+                        loading="lazy" alt="" class="global-logo" /></a>
+                <nav role="navigation" class="nav-menu w-nav-menu"><a
+                        href="https://webflow.com/website/Free-Cloneable-Startup-Template-Dark?rfsn=1238427.48b8d&amp;subid=darktemplate"
+                        class="nav-link w-nav-link">Dark Mode</a><a
+                        href="https://webflow.grsm.io/flowbase?content=Free-Cloneable-Startup-Template-Light"
+                        target="_blank" class="nav-button w-button">Clone now</a></nav>
+
             </div>
-            <span class="menu-text text-color1 text-xs mt-1">Menú</span>
         </div>
-
-        <!-- ---------------------->
-        <!-- Menu de navegación -->
-        <!-- ---------------------->
-
-        <nav id="menu-nav" class="hidden flex-col items-center bg-white absolute top-16 right-4 p-4 rounded shadow-lg">
-            <a href="/index.html"
-                class="block px-4 py-1 text-color5 hover:text-color6 relative group font-bold text-center">
-                Inicio <span class="block h-0.5 bg-color6 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 group-hover:w-11/12 transition-all duration-300"></span>
-            </a>
-            <a href="/src/pages/antecedentes.html"
-                class="block px-4 py-1 text-color4 hover:text-color6 relative group font-semibold text-center">
-                Antecendes
-                <span class="block h-0.5 bg-color6 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 group-hover:w-11/12 transition-all duration-300"></span>
-            </a>
-            <a href="/src/pages/plan-problema.html"
-                class="block px-4 py-1 text-color4 hover:text-color6 relative group font-semibold text-center">
-                Plant. del problema
-                <span class="block h-0.5 bg-color6 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 group-hover:w-11/12 transition-all duration-300"></span>
-            </a>
-            <a href="/src/pages/justificacion.html"
-                class="block px-4 py-1 text-color4 hover:text-color6 relative group font-semibold text-center">
-                Justificacion
-                <span class="block h-0.5 bg-color6 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 group-hover:w-11/12 transition-all duration-300"></span>
-            </a>
-            <a href="/src/pages//objetivos.html"
-                class="block px-4 py-1 text-color4 hover:text-color6 relative group font-semibold text-center">
-                Objetivos
-                <span class="block h-0.5 bg-color6 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 group-hover:w-11/12 transition-all duration-300"></span>
-            </a>
-            <a href="/src/pages/metodologia.html"
-                class="block px-4 py-1 text-color4 hover:text-color6 relative group font-semibold text-center">
-                Metodología
-                <span class="block h-0.5 bg-color6 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 group-hover:w-11/12 transition-all duration-300"></span>
-            </a>
-            <a href="/src/pages/tecnologias.html"
-                class="block px-4 py-1 text-color4 hover:text-color6 relative group font-semibold text-center">
-                Tecnologias
-                <span class="block h-0.5 bg-color6 absolute bottom-0 left-1/2 transform -translate-x-1/2 w-0 group-hover:w-11/12 transition-all duration-300"></span>
-            </a>
-        </nav>
-    </header>
-
-    <!----------------------->
-    <!------ Contenido ------>
-    <!----------------------->
-
-    <main class="flex-1 flex flex-col items-center justify-center p-5">
-        <h2 class="my-4 text-xl sm:text-2xl md:text-2xl lg:text-5xl font-montserrat font-bold text-color4">Introducción</h2>
-        <section class="my-8 contenedor_index flex flex-col items-center justify-center w-full sm:w-11/12 md:w-11/12 lg:w-11/12 xl:w-11/12 text-center mx-auto space-y-6">
-            <div class="flex flex-col md:flex-row justify-between w-full space-y-6 md:space-y-0 md:space-x-6">
-                <div class="flex items-center justify-center w-full md:w-1/2">
-                    <div class="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-112 lg:h-112 border-4 border-color5 overflow-hidden rounded-full">
-                        <img src="/src/assets/images/image1.svg" alt="" class="w-full h-full object-cover">
+        <div class="container-flex">
+            <h5 style="opacity:0;-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+                class="hero-overline">El mejor desarrollador el JULI</h5>
+            <h1 style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+                class="hero-h1">Simple &amp; Modern Landing Template</h1>
+            <p style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+                class="hero-paragraph">It&#x27;s simple, just clone the template with the button below and edit it to
+                suit any project you&#x27;re working on. Please support our work but following our socials.</p><a
+                style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+                href="https://webflow.grsm.io/flowbase?content=Free-Cloneable-Startup-Template-Light" target="_blank"
+                class="hero-button w-button">Clone now</a>
+        </div>
+        <div style="-webkit-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(0, 15PX, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);opacity:0"
+            class="hero-image-wrapper"><img
+                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b625e7439c8b_brush-1.svg"
+                alt="" class="hero-graphic-left" /><img
+                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6dfdb439c85_brush-2.svg"
+                alt="" class="hero-graphic-right" /><img
+                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f1fd9b89b6d25743aa0f_dashboard-light.png"
+                sizes="(max-width: 939px) 94vw, 883px"
+                srcset="https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f1fd9b89b6d25743aa0f_dashboard-light-p-500.png 500w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f1fd9b89b6d25743aa0f_dashboard-light.png 883w"
+                alt="" class="hero-image-placeholder" />
+            <div class="profile-images-wrapper"><img
+                    src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0e92e290c967dd76c23_people-white-bord.png"
+                    width="147" alt="" class="people-group-image" />
+                <div class="follower-number">Join our waiting list <span class="tag-span">5000+</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="services-section">
+        <div class="container-flex left-align">
+            <div class="title-wrap">
+                <h2 class="content-h2">Services that <span class="h2-span">drive success</span></h2>
+            </div>
+            <div class="services-grid"><a href="#" class="services-grid-block w-inline-block">
+                    <div class="icon-block"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b61191439c87_cursor.svg"
+                            alt="" /></div>
+                    <div class="service-title">Interface Design</div>
+                    <p class="service-paragraph">A pseudo-Latin text used in web design, layout, and printing.</p>
+                </a><a href="#" class="services-grid-block-02 w-inline-block">
+                    <div class="icon-block"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b66df8439ca1_eye.svg"
+                            alt="" /></div>
+                    <div class="service-title">Branding</div>
+                    <p class="service-paragraph">A pseudo-Latin text used in web design, layout, and printing.</p>
+                </a><a href="#" class="services-grid-block-03 w-inline-block">
+                    <div class="icon-block"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6325a439c88_copy.svg"
+                            alt="" /></div>
+                    <div class="service-title">Webflow Builds</div>
+                    <p class="service-paragraph">A pseudo-Latin text used in web design, layout, and printing.</p>
+                </a><a href="#" class="services-grid-block-04 w-inline-block">
+                    <div class="icon-block"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6d06f439c81_flash.svg"
+                            alt="" /></div>
+                    <div class="service-title">User Experience</div>
+                    <p class="service-paragraph">A pseudo-Latin text used in web design, layout, and printing.</p>
+                </a><a href="#" class="services-grid-block w-inline-block">
+                    <div class="icon-block"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b67da2439c98_book.svg"
+                            alt="" /></div>
+                    <div class="service-title">Animation</div>
+                    <p class="service-paragraph">A pseudo-Latin text used in web design, layout, and printing.</p>
+                </a><a href="#" class="services-grid-block-02 w-inline-block">
+                    <div class="icon-block"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b635b4439ca6_folder.svg"
+                            alt="" /></div>
+                    <div class="service-title">3D Models</div>
+                    <p class="service-paragraph">A pseudo-Latin text used in web design, layout, and printing.</p>
+                </a><a href="#" class="services-grid-block-03 w-inline-block">
+                    <div class="icon-block"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b67823439c9f_wifi.svg"
+                            alt="" /></div>
+                    <div class="service-title">User friendly</div>
+                    <p class="service-paragraph">A pseudo-Latin text used in web design, layout, and printing.</p>
+                </a>
+                <div class="services-grid-block-04 end-block">
+                    <div class="service-title service-title-centre">See how we<br />can help you.</div><a href="#"
+                        class="primary-cta w-button">Get started</a>
+                    <p class="tag-10">Minimal $1,000 project</p>
+                </div>
+            </div>
+        </div>
+        <div class="divider"></div>
+    </div>
+    <div class="features-section"><img
+            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b676de439ca7_Left%20Blur%402x.png"
+            width="424" sizes="(max-width: 479px) 100vw, 424px"
+            srcset="https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b676de439ca7_Left%2520Blur%25402x-p-500.png 500w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b676de439ca7_Left%2520Blur%25402x-p-800.png 800w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b676de439ca7_Left%2520Blur%25402x-p-1080.png 1080w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b676de439ca7_Left%20Blur%402x.png 1244w"
+            alt="" class="left-blur" />
+        <div class="container-flex">
+            <div class="title-wrap">
+                <h2 class="content-h2 content-h2-centre">Build products with <span class="h2-span">impact</span></h2>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, tellus sed
+                    imperdiet sodales, dui diam accumsan lorem</p>
+            </div>
+            <div class="feature-wrap">
+                <div class="feature-column-content">
+                    <div class="content-block">
+                        <div class="overline">CUSTOM SECTIONS</div>
+                        <h2 class="content-h2">Perfect base template<br />for creatives &amp; startups</h2>
+                        <p class="paragraph left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                            rutrum, tellus sed imperdiet sodales, dui diam accumsan lorem</p>
                     </div>
                 </div>
-                <div class="Seccion_bienvenida bg-color5 text-color1 p-8 rounded w-full md:w-1/2 mb-5 md:mb-0">
-                    <p class="text-sm sm:text-base md:text-lg lg:text-lg font-montserrat font-normal text-justify">
-                        En un mundo cada vez más digitalizado y orientado hacia la eficiencia, la gestión de
-                        inventario y préstamos en el almacén de una institución educativa, en este caso, el CPIC del
-                        Sena Regional Caldas, ha sido un proceso que hasta ahora se ha llevado a cabo de manera
-                        manual. Este procedimiento, que involucra el registro y seguimiento de herramientas,
-                        computadores, elementos de seguridad y otros recursos, no solo ha sido laborioso para el
-                        personal encargado del almacén, sino que también ha dejado al descubierto la falta de un
-                        sistema de control adecuado.
-                        <br>
-                        Sin embargo, con la creciente demanda de servicios y recursos en esta institución educativa,
-                        es crucial que se implemente un enfoque más eficiente y preciso para la gestión de
-                        inventario y préstamos. Es en este contexto que nuestro proyecto se forma como la solución
-                        que tanto se necesita. A través del desarrollo de software especializado, estamos
-                        comprometidos en automatizar este proceso, permitiendo la transición de un registro
-                        completamente manual a un sistema digital integral.
-                        <br>
-                        Nuestra iniciativa se centra en brindar un método más rápido, preciso y confiable para
-                        llevar un control exhaustivo de los elementos disponibles en el almacén, así como de los
-                        préstamos realizados a estudiantes y profesores. Esta transformación digital no solo
-                        agilizará la operación del almacén, sino que también facilitará a los usuarios, es decir, a
-                        estudiantes e instructores, el acceso y uso de los recursos disponibles, además este
-                        mecanismo tecnológico aspira a eliminar la falta de información y registros almacenados,
-                        proporcionando a la institución una herramienta de control de inventario que promete una
-                        mayor transparencia, seguridad y eficiencia en la gestión de sus activos.
-                    </p>
+                <div class="feature-column-image">
+                    <div class="feature-image-div"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f3f4c1ca1dff714244bd_dash-1-light.png"
+                            sizes="(max-width: 479px) 90vw, (max-width: 690px) 86vw, (max-width: 767px) 594px, (max-width: 991px) 42vw, 41vw"
+                            srcset="https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f3f4c1ca1dff714244bd_dash-1-light-p-500.png 500w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f3f4c1ca1dff714244bd_dash-1-light.png 594w"
+                            alt="" class="feature-image" /><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b64721439c8a_brush-3.svg"
+                            alt="" class="ribbon" /></div>
                 </div>
             </div>
-        </section>
-        <h2 class="my-4 text-xl sm:text-2xl md:text-2xl lg:text-5xl font-montserrat font-bold text-color4">Resumen</h2>
-        <section class="my-8 contenedor_index flex flex-col items-center justify-center w-full sm:w-11/12 md:w-11/12 lg:w-11/12 xl:w-11/12 text-center mx-auto space-y-6">
-            <div class="flex flex-col md:flex-row justify-between w-full space-y-6 md:space-y-0 md:space-x-6">
-                <div class="resumen bg-color2 text-color4 p-8 rounded w-full md:w-1/2">
-                    <p class="text-sm sm:text-base md:text-lg lg:text-lg font-montserrat font-normal text-justify">
-                        En un contexto de creciente digitalización, la gestión manual de inventario y préstamos en
-                        el almacén del CPIC del Sena Regional Caldas ha revelado deficiencias y falta de control.
-                        Ante la demanda de servicios, nuestro proyecto propone una solución a través del desarrollo
-                        de software especializado para automatizar este proceso. Buscamos agilizar operaciones,
-                        facilitar el acceso a recursos y eliminar la falta de información mediante un sistema
-                        digital integral.
-                        <br>
-                        Basándonos en la literatura, identificamos la necesidad de una transformación digital en la
-                        gestión educativa. Aunque existen esfuerzos, las metodologías carecen de practicidad,
-                        generando ineficiencias en el control logístico de inventario. En el CPIC, la problemática
-                        se agrava por métodos manuales, provocando congestión y fallos en el control de
-                        herramientas. La justificación de nuestro proyecto radica en superar estas limitaciones
-                        mediante un software que garantice eficiencia operativa, precisión en el control de
-                        inventarios, agilidad en la toma de decisiones y transparencia en auditorías.
-                        <br> El objetivo general es desarrollar un sistema automatizado en el CPIC para mejorar la
-                        eficiencia en la gestión del suministro. La metodología sigue el ciclo PHVA, recopilando
-                        datos mediante entrevistas y encuestas en la fase PLANEAR, desarrollando el sistema con
-                        SCRUM en la fase HACER, integrando sistemas y realizando pruebas exhaustivas en la fase
-                        VERIFICAR, y evaluando resultados y ajustando el sistema en la fase ACTUAR. Este enfoque
-                        iterativo y adaptativo asegura una implementación exitosa y una mejora continua del sistema
-                        de gestión logística del CPIC, alineado con sus necesidades específicas.
-                    </p>
+            <div class="feature-wrap reverse-wrap">
+                <div class="feature-column-content">
+                    <div class="content-block">
+                        <div class="overline">CUSTOM SECTIONS</div>
+                        <h2 class="content-h2">Or just clone individual sections / elements.</h2>
+                        <p class="paragraph left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                            rutrum, tellus sed imperdiet sodales, dui diam accumsan lorem</p>
+                    </div>
                 </div>
-                <div class="flex items-center justify-center w-full md:w-1/2 hidden md:flex">
-                    <div class="w-56 h-56 sm:w-64 sm:h-64 md:w-80 md:h-80 lg:w-112 lg:h-112 border-4 border-color6 overflow-hidden rounded-full">
-                        <img src="/src/assets/images/image2.svg" alt="" class="w-full h-full object-cover">
+                <div class="feature-column-image">
+                    <div class="feature-image-div"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f3f5cc9ad7fcc94d7006_dash-2-light.png"
+                            sizes="(max-width: 479px) 90vw, (max-width: 693px) 86vw, (max-width: 767px) 596px, (max-width: 991px) 42vw, 41vw"
+                            srcset="https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f3f5cc9ad7fcc94d7006_dash-2-light-p-500.png 500w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f3f5cc9ad7fcc94d7006_dash-2-light.png 596w"
+                            alt="" class="feature-image" /><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b62334439c9e_brush-4.svg"
+                            alt="" class="ribbon-2" /></div>
+                </div>
+            </div>
+            <div class="feature-wrap">
+                <div class="feature-column-content">
+                    <div class="content-block">
+                        <div class="overline">CUSTOM SECTIONS</div>
+                        <h2 class="content-h2">Change type, colour,<br />layouts and own the design.</h2>
+                        <p class="paragraph left-align">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
+                            rutrum, tellus sed imperdiet sodales, dui diam accumsan lorem</p>
+                    </div>
+                </div>
+                <div class="feature-column-image">
+                    <div class="feature-image-div"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f3f5acccd150c8118c82_dash-3-light.png"
+                            sizes="(max-width: 479px) 90vw, (max-width: 711px) 86vw, (max-width: 767px) 612px, (max-width: 991px) 42vw, 41vw"
+                            srcset="https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f3f5acccd150c8118c82_dash-3-light-p-500.png 500w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f3f5acccd150c8118c82_dash-3-light.png 612w"
+                            alt="" class="feature-image" /><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b69153439c92_brush-5.svg"
+                            alt="" class="ribbon-3" /></div>
+                </div>
+            </div>
+        </div><img
+            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6bd0c439ca2_Right%20Blur.png"
+            width="424" sizes="(max-width: 479px) 100vw, 424px"
+            srcset="https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6bd0c439ca2_Right%2520Blur-p-500.png 500w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6bd0c439ca2_Right%20Blur.png 591w"
+            alt="" class="right-blur" />
+    </div>
+    <div class="cta-section">
+        <div class="container">
+            <div class="newsletter-block">
+                <div class="overline">CUSTOM SECTIONS</div>
+                <h2 class="content-cta">Build better on webflow with <a href="http://flowbase.co" target="_blank"
+                        class="link">flowbase.co</a></h2>
+                <div class="form-block w-form">
+                    <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-wrapper"
+                        data-wf-page-id="5e24f0a19b89b60b8d439c7a"
+                        data-wf-element-id="27f0d434-707a-c554-4545-673190c6ceda"><input
+                            class="newsletter-field w-input" maxlength="256" name="name-2" data-name="Name 2"
+                            placeholder="Enter Email" type="text" id="name-2" required="" /><input type="submit"
+                            data-wait="Please wait..." class="send-button w-button" value="Subscribe" /></form>
+                    <div class="w-form-done">
+                        <div>Thank you! Your submission has been received!</div>
+                    </div>
+                    <div class="w-form-fail">
+                        <div>Oops! Something went wrong while submitting the form.</div>
+                    </div>
+                </div>
+                <div class="profile-images-wrapper"><img
+                        src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6bf32439caa_people-purple.png"
+                        width="147" alt="" class="people-group-image" />
+                    <div class="follower-number _02">Join our waiting list <span class="tag-span">5000+</span></div>
+                </div><img
+                    src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b69153439c92_brush-5.svg"
+                    alt="" class="ribbon-3" /><img
+                    src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b62334439c9e_brush-4.svg"
+                    alt="" class="ribbon-2" />
+            </div>
+        </div>
+    </div>
+    <div class="testimonials-section">
+        <div class="container-flex">
+            <h2 class="content-h2 content-h2-centre">Client Word’s</h2>
+            <p class="paragraph">“Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, tellus sed
+                imperdiet sodales, dui diam accumsan lorem, a accumsan ex leo nec tellus. Phasellus varius dui neque,
+                efficitur rutrum tellus luctus a. Pellentesque tincidunt convallis justo a tincidunt. Cras finibus
+                tempor tellus sit amet congue. Vivamus scelerisque massa in massa sodales, sit amet tincidunt dolor
+                malesuada. Fusce in tempus risus.”</p>
+            <p class="name-title">Dustin Miller</p><img
+                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6bdad439caf_4.svg"
+                alt="" />
+        </div>
+        <div class="divider"></div>
+    </div>
+    <div class="pricing-section">
+        <div class="container-flex">
+            <div class="title-wrap flex-centre">
+                <h2 class="content-h2 content-h2-centre">Pricing designed to suit <span class="h2-span">all
+                        business</span></h2>
+                <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum, <br />tellus
+                    sed imperdiet sodales, dui diam accumsan lorem</p>
+                <div class="tabs">
+                    <div class="price-plan">Bill Monthly</div>
+                    <div class="tab-switcher">
+                        <div class="white-circle"></div>
+                    </div>
+                    <div class="price-plan">Bill Yearly</div>
+                </div>
+            </div>
+            <div class="w-layout-grid pricing-grid">
+                <div class="pricing-block">
+                    <div class="pricing-top-block">
+                        <div class="price-title">Premium</div>
+                        <div class="price-number"><span class="dollar-sign">$</span>0</div>
+                    </div>
+                    <div class="pricing-bottom-block">
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">7,000,000+ Events</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">4 Custom Domains</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">Dedicated Support Agent</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">12 months data history</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">1 dedicated SSL</div>
+                        </div>
+                    </div><a href="#" class="primary-cta w-button">Get Started</a>
+                </div>
+                <div class="pricing-block-big">
+                    <div class="pricing-top-block-big">
+                        <div class="price-title">Basic</div>
+                        <div class="price-number"><span class="dollar-sign">$</span>23</div>
+                    </div>
+                    <div class="pricing-bottom-block-big">
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">7,000,000+ Events</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">4 Custom Domains</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">Dedicated Support Agent</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">12 months data history</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">1 dedicated SSL</div>
+                        </div>
+                    </div><a href="#" class="primary-cta focus-button w-button">Get Started</a>
+                </div>
+                <div class="pricing-block">
+                    <div class="pricing-top-block">
+                        <div class="price-title">Premium</div>
+                        <div class="price-number"><span class="dollar-sign">$</span>59</div>
+                    </div>
+                    <div class="pricing-bottom-block">
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">7,000,000+ Events</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">4 Custom Domains</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">Dedicated Support Agent</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">12 months data history</div>
+                        </div>
+                        <div class="feature-block"><img
+                                src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b63a0a439cac_check.svg"
+                                alt="" class="tick-icon" />
+                            <div class="feature">1 dedicated SSL</div>
+                        </div>
+                    </div><a href="#" class="primary-cta w-button">Get Started</a>
+                </div>
+            </div>
+        </div><img
+            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b676de439ca7_Left%20Blur%402x.png"
+            width="424" sizes="(max-width: 479px) 100vw, 424px"
+            srcset="https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b676de439ca7_Left%2520Blur%25402x-p-500.png 500w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b676de439ca7_Left%2520Blur%25402x-p-800.png 800w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b676de439ca7_Left%2520Blur%25402x-p-1080.png 1080w, https://assets-global.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b676de439ca7_Left%20Blur%402x.png 1244w"
+            alt="" class="left-blur" />
+    </div>
+    <div class="footer-section">
+        <div class="container-flex left-align">
+            <div class="footer-content">
+                <div class="footer-left-block"><a href="#" class="w-inline-block"><img
+                            src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6310e439c97_logo.svg"
+                            alt="" class="footer-logo" /></a>
+                    <div class="form-title">Subscribe to our newsletter</div>
+                    <div class="form-block no-padding w-form">
+                        <form id="email-form" name="email-form" data-name="Email Form" method="get" class="form-block"
+                            data-wf-page-id="5e24f0a19b89b60b8d439c7a"
+                            data-wf-element-id="fe5ba1b0-361a-5842-54e7-e98bb698a94f"><input
+                                class="newsletter-field newsletter-small w-input" maxlength="256" name="name"
+                                data-name="Name" placeholder="Enter Email" type="text" id="name" required="" /><input
+                                type="submit" data-wait="Please wait..." class="send-button w-button"
+                                value="Subscribe" /></form>
+                        <div class="w-form-done">
+                            <div>Thank you! Your submission has been received!</div>
+                        </div>
+                        <div class="w-form-fail">
+                            <div>Oops! Something went wrong while submitting the form.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-right-block">
+                    <div class="footer-link-block">
+                        <div class="footer-title">Product</div><a href="#" class="footer-link">Home</a><a href="#"
+                            class="footer-link">Pricing</a><a href="#" class="footer-link">FAQ</a>
+                    </div>
+                    <div class="footer-link-block">
+                        <div class="footer-title">Services</div><a href="#" class="footer-link">Development</a><a
+                            href="#" class="footer-link">Design</a><a href="#" class="footer-link">Animation</a><a
+                            href="#" class="footer-link">UX</a>
+                    </div>
+                    <div class="footer-link-block">
+                        <div class="footer-title">Company</div><a href="#" class="footer-link">Blog</a><a href="#"
+                            class="footer-link">Contact</a><a href="#" class="footer-link">Service</a><a href="#"
+                            class="footer-link">Blog</a><a href="#" class="footer-link">Contact</a>
+                    </div>
+                    <div class="footer-link-block">
+                        <div class="footer-title">Socials</div><a href="#" class="footer-link">Twitter</a><a href="#"
+                            class="footer-link">Github</a><a href="#" class="footer-link">Medium</a>
                     </div>
                 </div>
             </div>
-        </section>
-    </main>
-
-    <!-- Pie de página -->
-    <footer
-        class="bg-color5 text-color1 p-4 text-center text-xs sm:text-sm md:text-base lg:text-base flex flex-col items-center space-y-2">
-        <p class="m-0 text-sm">&copy; 2024 SGIA Todos los derechos reservados</p>
-        <div class="redes-sociales flex justify-center gap-4 mt-2">
-            <a href="https://www.facebook.com" target="_blank" class="text-color1 text-lg hover:text-color4"><i
-                    class="fab fa-facebook"></i></a>
-            <a href="https://www.twitter.com" target="_blank" class="text-color1 text-lg hover:text-color4"><i
-                    class="fab fa-twitter"></i></a>
-            <a href="https://www.instagram.com" target="_blank" class="text-color1 text-lg hover:text-color4"><i
-                    class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com" target="_blank" class="text-color1 text-lg hover:text-color4"><i
-                    class="fab fa-linkedin"></i></a>
         </div>
-    </footer>
-    <script src="/src/assets/js/menu.js"></script>
+    </div>
+    <div class="footer-base">
+        <div class="footer-base-container">
+            <div class="copyright white">Copyright © 2020 <a href="http://flowbase.co" target="_blank"
+                    class="flowb">Flowbase</a>. All rights reserved.</div>
+            <div class="social-media-block"><a href="#" class="social-link-block w-inline-block"><img
+                        src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6cdc9439c96_social-facebook.svg"
+                        alt="" class="social-icon" /></a><a href="#" class="social-link-block w-inline-block"><img
+                        src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6360e439c8f_social-twitter.svg"
+                        alt="" class="social-icon" /></a><a href="#" class="social-link-block w-inline-block"><img
+                        src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b656c7439c89_social-dribbble.svg"
+                        alt="" class="social-icon" /></a><a href="#" class="social-link-block w-inline-block"><img
+                        src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b6379d439c82_social-youtube.svg"
+                        alt="" class="social-icon" /></a><a href="#" class="social-link-block w-inline-block"><img
+                        src="https://cdn.prod.website-files.com/5e24f0a19b89b6431b439c7b/5e24f0a19b89b60951439c8e_social-instagram.svg"
+                        alt="" class="social-icon" /></a></div>
+        </div>
+    </div>
+    <script src="/js/jquery-3.5.1.min.dc5e7f18c8.js"
+        type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+        crossorigin="anonymous"></script>
+    <script
+        src="/js/webflow-clone-template-light.0c7d4e1a4.js"
+        type="text/javascript"></script>
 </body>
 
 </html>
